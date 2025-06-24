@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scott & Tom's 40th B-Day Bash</title>
+
+  <!-- Google Fonts: Fredoka 400 & 600 -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      background: white;
+      overflow-x: auto;
+    }
+
+    .hero-wrapper {
+      background-color: #26D3D1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero {
+      width: 800px;
+      height: 900px;
+      background: url('background.png') no-repeat top center;
+      background-size: contain;
+      background-color: #26D3D1; /* now teal behind image */
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+      font-weight: 600;
+    }
+
+    .hero-title h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    .hero-title h2 {
+      font-size: 1.8rem;
+      margin: 0.5rem 0 0 0;
+    }
+
+    .content {
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      width: 90%;
+      max-width: 350px; /* reduced from 500px */
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-radius: 12px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-weight: 400;
+    }
+
+    .content a {
+      color: white;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: #f0e68c;
+      font-weight: bold;
+    }
+
+    .below {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: white;
+    }
+
+    .below-content {
+      max-width: 800px;
+      width: 100%;
+      padding: 2rem 1.5rem;
+      color: #333;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .below-content {
+      color: #00859A;
+    }
+
+    .below-content ul li::before {
+      color: #00859A;
+    }
+
+    .below-content a {
+      color: #00859A;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    @media (max-width: 800px) {
+      .hero-title h1 {
+        font-size: 2rem;
+      }
+
+      .hero-title h2 {
+        font-size: 1.3rem;
+      }
+
+      .content {
+        top: 180px;
+        padding: 1.5rem 1rem;
+      }
+
+      .below-content {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-wrapper">
+    <div class="hero">
+      <div class="hero-title">
+        <h1>Scott & Tom’s</h1>
+        <h2>40th B-Day Summer Bash!</h2>
+      </div>
+
+      <div class="content">
+        <p>You’re invited! 😎</p>
+        <p><strong>When:</strong> Saturday July 26, 3p–8p</p>
+        <p><strong>Where:</strong><br />Onni SLU (parking onsite)<br /><a href="https://google.com" target="_blank" rel="noopener noreferrer">112 Boren Ave N, 98109 2nd Floor</a></p>
+        <ul>
+          <li>Kids welcome!</li>
+          <li>Bar and catered food provided!</li>
+          <li>Inside seating plus outdoor patio!</li>
+          <li>Pool is open, bring your suit!</li>
+        </ul>
+        <p><strong>RSVP encouraged, link below :)</strong></p>
+      </div>
+    </div>
+  </div>
+
+<div class="below">
+  <div class="below-content">
+    <p><strong>More details:</strong></p>
+    <ul>
+      <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Click here</a> to RSVP</li>
+      <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Click here</a> for Directions</li>
+      <li>Parking will be validated, keep your ticket!</li>
+      <li>More</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
+
