@@ -123,7 +123,14 @@
       font-weight: 500;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
+
+      .hero {
+        width: 100%; /* reduce height on small screens */
+        background-size: 100% auto; /* scale down the image */
+        background-position: top center; /* ensure top of image is shown */
+      }
+
       .hero-title h1 {
         font-size: 2rem;
       }
@@ -141,6 +148,7 @@
         width: 95%;
       }
     }
+
   </style>
 </head>
 <body>
