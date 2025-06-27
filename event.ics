@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ScottAndTom40th//EN
+BEGIN:VEVENT
+UID:scott-tom-bash-2025@example.com
+DTSTAMP:20250627T160000Z
+ORGANIZER;CN=Scott and Tom:mailto:scottandtom40th@example.com
+SUMMARY:Scott & Tom’s 40th B-Day Summer Bash!
+DESCRIPTION:Details at www.scottandtom40th.com
+LOCATION:112 Boren Ave N, Seattle WA 98109
+DTSTART:20250726T220000Z
+DTEND:20250727T030000Z
+END:VEVENT
+END:VCALENDAR
